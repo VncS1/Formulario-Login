@@ -1,0 +1,222 @@
+:root {
+    --text-base: #afb6c2;
+    --text-title: #d4ccb6;
+    --background: #191816;
+    --form-background: #24221f;
+    --primary-color: #ffc632;
+  }
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main {
+    width: 100%; 
+    height: 100vh;
+
+    display: flex;
+}
+
+.box-left {
+    width: 50%;
+    height: 100%;
+
+    background: var(--background);
+
+    display: flex;
+    flex-direction: column;
+
+    position: relative;  
+    
+}
+
+
+.box-left .logo {
+    width: 7rem;
+    
+    position: absolute;
+    top: 2.5rem;
+    left: 2.5rem;
+}
+
+.box-form {
+    width: 80%;
+    height: 75%;
+
+    margin: auto;
+
+    background: var(--form-background);
+
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: center;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content:center;
+
+    height: 80%;
+    width: 60%;
+
+    
+    /* background: #000;
+     */
+}
+
+.text-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    
+}
+
+.text-top img {
+    width: 24px;
+}
+
+.form p.login {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+
+    font-size: 24px;
+    line-height: 36px;
+    color: #fff;
+
+    margin-left: 7px;
+}
+
+.form p.infos {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+
+    font-size: 14px;
+    line-height: 24px;
+
+    color: #AFB6C2;
+}
+
+form p:last-child {
+    margin: 0 auto;
+}
+
+
+
+
+form {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    width: 100%;
+    /* background-color: #333; */
+}
+
+label {
+    color: var(--text-base);
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+form input[type=email], input[type=password]{
+    border: 1px solid #868686;
+    width: 100%;
+
+    padding: 12px 6px;
+    border-radius: .20rem;
+
+    transition: border 0.5s;
+
+    background: transparent;
+}
+
+form input[type=email]:focus, input[type=password]:focus {
+    outline: none;
+    border: 2px solid var(--primary-color);
+    
+    
+}
+
+.form a {
+    color: var(--primary-color);
+    text-decoration: none;
+
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+
+    font-size: 14px;
+    line-height: 21px;
+}
+
+.form p.conta {
+    color: var(--primary-color);
+
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+
+    font-size: 14px;
+    line-height: 21px;
+
+    margin-top: 10px;
+}
+
+.check {
+    display: flex;
+    justify-content: space-between;
+
+    
+}
+
+.checkbox {
+    display: flex;
+    align-items: center;
+    justify-content:center;
+
+    
+}
+
+.checkbox p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 13px;
+    color: var(--text-base);
+
+    
+}
+
+
+
+.box-right {
+    width: 50%;
+    height: 100%;
+} 
+
+.box-right img {
+    width: 100%;
+    height: 100%;
+    
+    object-fit: cover;
+}
+
+@media (max-width: 767px) {
+    .box-right {
+        display: none;
+    }
+
+    .box-left {
+        width: 100%;
+    }
+
+    .box-form {
+        background-color: var(--background);
+    }
+
+    .form {
+        width: 100%;
+    }
+}
